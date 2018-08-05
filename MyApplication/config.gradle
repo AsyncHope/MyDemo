@@ -1,0 +1,77 @@
+ext {
+
+    android = [
+            compileSdkVersion: 27,
+            buildToolsVersion: '27.0.3',
+            applicationId    : "com.anysoft.demo",
+            minSdkVersion    : 19,
+            targetSdkVersion : 27,
+            versionCode      : 1.0,
+            versionName      : "1.0"
+    ]
+
+    def dependVersion = [
+            support    : "27.1.1",
+            butterknife: "8.8.1",
+            multidex: "1.0.1",
+            gson: "2.7",
+            junit: "4.12",
+            constraint: "1.1.0",
+    ]
+
+    dependencies = [
+            //base
+            "appcompat-v7"                      : "com.android.support:appcompat-v7:${dependVersion.support}",
+            "recyclerview-v7"                   : "com.android.support:recyclerview-v7:${dependVersion.support}",
+            "design"                            : "com.android.support:design:${dependVersion.support}",
+            "junit"                             : "junit:junit:${dependVersion.junit}",
+            "constraint-layout"                 : "com.android.support.constraint:constraint-layout:${dependVersion.constraint}",
+
+            //ui
+            "pageindicatorview"                 : "com.romandanylyk:pageindicatorview:0.0.7",
+            "picasso"                           : "com.squareup.picasso:picasso:2.5.2",
+            "fresco"                            : "com.facebook.fresco:fresco:1.3.0",
+            "fresco-animated"                   : "com.facebook.fresco:animated-base-support:0.12.0",
+            // 支持 GIF 动图，需要添加
+            "fresco-gif"                        : "com.facebook.fresco:animated-gif:1.3.0",
+            "fresco-webp"                       : "com.facebook.fresco:animated-webp:0.12.0",
+            // 仅支持 WebP 静态图，需要添加
+            "fresco-webp-support"               : "com.facebook.fresco:webpsupport:0.12.0",
+            "autolayout"                        : "com.zhy:autolayout:1.4.5",
+            "banner"                            : "com.youth.banner:banner:1.4.9",
+            "glide"                             : "com.github.bumptech.glide:glide:3.7.0",
+            "BaseRecyclerViewAdapterHelper"     : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30",
+            "switchbutton"                      : "com.kyleduo.switchbutton:library:1.4.4",
+            "loopView"                          : "com.weigan:loopView:0.1.1",
+            "pickerview"                        : "com.bigkoo:pickerview:2.1.1",
+            "circleimageview"                   : "de.hdodenhof:circleimageview:2.1.0",
+            "swipemenulistview"                 : "com.baoyz.swipemenulistview:library:1.3.0",
+            "tablayout"                         : "com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar",
+
+            //dao
+            "greendao"                          : "org.greenrobot:greendao:3.0.1",
+            "greendao-generator"                : "org.greenrobot:greendao-generator:3.0.0",
+            "eventbus"                          : "org.greenrobot:eventbus:3.0.0",
+            "otto"                              : "com.squareup:otto:1.3.8",
+            "umeng"                             : "com.umeng.analytics:analytics:latest.integration",
+            "walle"                             : "com.meituan.android.walle:library:1.1.3",
+            "cachewebviewlib"                   : "ren.yale.android:cachewebviewlib:1.3.3",
+
+            //network
+            "gson"                              : "com.google.code.gson:gson:${dependVersion.gson}",
+            "okgo"                              : "com.lzy.net:okgo:3.0.4",
+            "okrx2"                             : "com.lzy.net:okrx2:2.0.2",
+            "okserver"                          : "com.lzy.net:okserver:2.0.5",
+            "rxandroid"                         : "io.reactivex.rxjava2:rxandroid:2.0.1",
+
+            //other
+            "logger"                            : "com.orhanobut:logger:1.15",
+            "butterknife"                       : "com.jakewharton:butterknife:${dependVersion.butterknife}",
+            "butterknife-compiler"              : "com.jakewharton:butterknife-compiler:${dependVersion.butterknife}",
+            "multidex"                          : "com.android.support:multidex:${dependVersion.multidex}",
+
+
+    ]
+
+
+}
